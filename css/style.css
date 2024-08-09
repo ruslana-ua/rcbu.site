@@ -4825,6 +4825,12 @@ body .bvi-body .bvi-show {
   .header__phone::before {
     display: none
   }
+  .search-header__form {
+    right: 80px
+  }
+  .search-header__form.show {
+    width: calc(100% - 80px)
+  }
   .bvi {
     display: flex;
     align-items: center;
