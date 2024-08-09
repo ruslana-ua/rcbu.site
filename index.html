@@ -6,7 +6,7 @@
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20240724201722">
+	<link rel="stylesheet" href="css/style.min.css?_v=20240809181011">
 	<link rel="shortcut icon" href="favicon.ico">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -170,7 +170,7 @@
 				<div class="main__container">
 					<div class="main__wrapper">
 						<div class="main__head">
-							<h5 class="main__subtitle">РЕСУРСНИЙ ЦЕНТР</h5>
+							<div class="main__subtitle h5">РЕСУРСНИЙ ЦЕНТР</div>
 							<h1 class="main__title">БЕЗБАР’ЄРНА УКРАЇНА</h1>
 							<div class="main__text text-m text-mob">
 								<p>Громадської спілки “Всеукраїнське громадське об’єднання “Національна асамблея людей з інвалідністю України”</p>
@@ -237,7 +237,7 @@
 							</div>
 							<div class="offer__content">
 								<h3 class="offer__title">Каталог товарів</h3>
-								<div class="offer__details text-xs _icon-arrow-link">Детальніше</div>
+								<div class="offer__details details text-xs _icon-arrow-link">Детальніше</div>
 							</div>
 						</a>
 						<a href="" class="offer__item">
@@ -246,7 +246,7 @@
 							</div>
 							<div class="offer__content">
 								<h3 class="offer__title">Адаптація сайтів</h3>
-								<div class="offer__details text-xs _icon-arrow-link">Детальніше</div>
+								<div class="offer__details details text-xs _icon-arrow-link">Детальніше</div>
 							</div>
 						</a>
 						<a href="" class="offer__item">
@@ -255,7 +255,7 @@
 							</div>
 							<div class="offer__content">
 								<h3 class="offer__title">Аудит доступності</h3>
-								<div class="offer__details text-xs _icon-arrow-link">Детальніше</div>
+								<div class="offer__details details text-xs _icon-arrow-link">Детальніше</div>
 							</div>
 						</a>
 						<a href="" class="offer__item">
@@ -264,7 +264,7 @@
 							</div>
 							<div class="offer__content">
 								<h3 class="offer__title">Навчання</h3>
-								<div class="offer__details text-xs _icon-arrow-link">Детальніше</div>
+								<div class="offer__details details text-xs _icon-arrow-link">Детальніше</div>
 							</div>
 						</a>
 					</div>
@@ -274,7 +274,7 @@
 				<div class="about__container">
 					<div class="about__wrapper">
 						<div class="about__content">
-							<h4 class="about__title">Ресурсний центр БЕЗБАР’ЄРНА УКРАЇНА - це індивідуальний підхід до адаптації середовища для маломобільних груп населення</h4>
+							<div class="about__title h4">Ресурсний центр БЕЗБАР’ЄРНА УКРАЇНА - це індивідуальний підхід до адаптації середовища для маломобільних груп населення</div>
 							<div class="about__text text-mob">
 								<p>Ми розробляємо та виготовляємо широкий спектр засобів адаптації середовища, призначених для безпечного самостійного пересування будь-якої людини, незалежно від її фізичних особливостей</p>
 							</div>
@@ -323,9 +323,11 @@
 			</section>
 			<section class="products">
 				<div class="products__container">
-					<div class="products__top">
-						<h2 class="products__title--top">Те, що робить світ кращим</h2>
-						<a href="" class="products__all _icon-arrow-link">Переглянути усі товари </a>
+					<div class="products__top top">
+						<div class="top__title h2">Те, що робить світ кращим</div>
+						<div class="top__block">
+							<a href="" class="top__all _icon-arrow-link">Переглянути усі товари </a>
+						</div>
 					</div>
 					<div class="products__slider swiper">
 						<div class="products__wrapper swiper-wrapper">
@@ -385,6 +387,223 @@
 							</a>
 						</div>
 						<div class="products__nav-swiper nav-swiper">
+							<button type="button" class="nav-swiper__button swiper-button-prev _icon-arrow-link"></button>
+							<button type="button" class="nav-swiper__button swiper-button-next _icon-arrow-link"></button>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="contacts">
+				<div class="contacts__container">
+					<div class="contacts__wrapper">
+						<form class="contacts__form form">
+							<div class="form__title h5">Зв’яжіться з нами</div>
+							<div class="form__main">
+								<div class="form__wrap">
+									<div class="form__item">
+										<div class="form__label text-s">Ваше ім’я<span>*</span></div>
+										<input data-error="Поле є обовʼязковим для заповнення" data-required="name" data-validate name="name" type="text" placeholder="Вкажіть ваше ім’я" class="form__input">
+									</div>
+									<div class="form__item">
+										<div class="form__label text-s">Ваш номер телефону<span>*</span></div>
+										<input data-error="Поле є обовʼязковим для заповнення" data-required="phone" data-validate name="tel" type="tel" placeholder="Вкажіть ваш номер телефону*" class="form__input phone-mask">
+									</div>
+									<div class="form__item">
+										<div class="form__label text-s">Ваш e-mail<span>*</span></div>
+										<input data-error="Поле є обовʼязковим для заповнення" data-required="name" data-validate name="email" type="text" placeholder="Вкажіть вашу електронну пошту" class="form__input">
+									</div>
+									<div class="form__item">
+										<div class="form__label text-s">Повідомлення</div>
+										<input name="text" type="text" placeholder="Розкажіть про своє замовлення" class="form__input">
+									</div>
+									<div class="form__item">
+										<div class="form__label text-s">Завантажити файл</div>
+										<input name="file" type="file" class="form__input form__input--file" id="upload-file" accept=".webp, .webp, .webp">
+										<label class="form__file--label _icon-clip" for="upload-file">
+											<span class="form__text"></span>
+										</label>
+									</div>
+								</div>
+								<div class="form__info text-xs">
+									<p>Натискаючи на кнопку я даю згоду на <a href="">обробку персональних даних</a></p>
+								</div>
+								<button type="submit" class="form__button btn">Залишити заявку</button>
+							</div>
+						</form>
+					</div>
+				</div>
+			</section>
+			<section class="reviews">
+				<div class="reviews__container">
+					<div class="reviews__top top">
+						<div class="top__title h2">Про нас говорять</div>
+					</div>
+					<div class="reviews__slider swiper">
+						<div class="reviews__wrapper swiper-wrapper">
+							<div class="reviews__slide swiper-slide">
+								<div class="reviews__main">
+									<div class="reviews__quotes _icon-quotes"></div>
+									<div data-simplebar class="reviews__text text-s">
+										<p>Дякую команді РЦБУ за консультацію та тестування сайту на доступність. З вами було приємно співпрацювати. Швидко, якісно та надійно.</p>
+									</div>
+								</div>
+								<div class="reviews__bottom">
+									<div class="reviews__icon lazy_image">
+										<img data-src="img/reviews/icon-1.webp" alt="">
+									</div>
+									<div class="reviews__name text-xs">ГО СУХАРІ</div>
+								</div>
+							</div>
+							<div class="reviews__slide swiper-slide">
+								<div class="reviews__main">
+									<div class="reviews__quotes _icon-quotes"></div>
+									<div data-simplebar class="reviews__text text-s">
+										<p>Дуже вдячні компанії РЦБУ за допомогу в оформленні дитячої книги шрифтом Брайля. Вони показали високий професіоналізм, оперативність і уважність до деталей. Завдяки їхній підтримці, ми створили унікальну книгу для дітей з вадами зору. Щиро рекомендую РЦБУ як надійного партнера у друці книг шрифтом Брайля.Дуже вдячні компанії РЦБУ за допомогу в оформленні дитячої книги шрифтом Брайля. Вони показали високий професіоналізм, оперативність і уважність до деталей. Завдяки їхній підтримці, ми створили унікальну книгу для дітей з вадами зору. Щиро рекомендую РЦБУ як надійного партнера у друці книг шрифтом Брайля</p>
+									</div>
+								</div>
+								<div class="reviews__bottom">
+									<div class="reviews__icon lazy_image">
+										<img data-src="img/reviews/icon-2.webp" alt="">
+									</div>
+									<div class="reviews__name text-xs">Право вибору - Реабілітаційний центр</div>
+								</div>
+							</div>
+							<div class="reviews__slide swiper-slide">
+								<div class="reviews__main">
+									<div class="reviews__quotes _icon-quotes"></div>
+									<div data-simplebar class="reviews__text text-s">
+										<p>Ми придбали продукцію у компанії РЦБУ, яка спеціалізується на товарах для маломобільних груп населення, і залишилися дуже задоволені. Висока якість виробів та чудовий сервіс справили на нас приємне враження. </p>
+									</div>
+								</div>
+								<div class="reviews__bottom">
+									<div class="reviews__icon lazy_image">
+										<img data-src="img/reviews/icon-1.webp" alt="">
+									</div>
+									<div class="reviews__name text-xs">Василенко Олена</div>
+								</div>
+							</div>
+						</div>
+						<div class="reviews__nav-swiper nav-swiper nav-swiper-mod">
+							<button type="button" class="nav-swiper__button swiper-button-prev _icon-arrow-link"></button>
+							<button type="button" class="nav-swiper__button swiper-button-next _icon-arrow-link"></button>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="clients">
+				<div class="clients__container">
+					<div class="clients__main clients-main">
+						<div class="clients-main__block">
+							<a href="http://www.metro.kyiv.ua/" target="_blank" class="clients-main__item lazy_image">
+								<img data-src="img/clients/metro-kyiv_color.svg" alt="">
+							</a>
+							<a href="https://dobrobut.com/" target="_blank" class="clients-main__item lazy_image">
+								<img data-src="img/clients/dobrobut_color.svg" alt="">
+							</a>
+							<a href="https://www.atbmarket.com/" target="_blank" class="clients-main__item lazy_image">
+								<img data-src="img/clients/atbmarket_color.svg" alt="">
+							</a>
+							<a href="https://www.ukrposhta.ua/ua" target="_blank" class="clients-main__item lazy_image">
+								<img data-src="img/clients/ukrposhta_color.svg" alt="">
+							</a>
+							<a href="https://www.uz.gov.ua/" target="_blank" class="clients-main__item lazy_image">
+								<img data-src="img/clients/uz_color.svg" alt="">
+							</a>
+							<a href="https://ucf.in.ua/" target="_blank" class="clients-main__item lazy_image">
+								<img data-src="img/clients/ucf_color.svg" alt="">
+							</a>
+						</div>
+						<div class="clients-main__item">
+							<div class="clients-main__count">50+ </div>
+							<div class="clients-main__text">задоволених клієнтів</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="blog">
+				<div class="blog__container">
+					<div class="blog__top top">
+						<div class="top__title h2">Блог</div>
+						<div class="top__block">
+							<a href="" class="top__all _icon-arrow-link">Переглянути усі статті </a>
+						</div>
+					</div>
+					<div class="blog__slider swiper">
+						<div class="blog__wrapper swiper-wrapper">
+							<a href="" class="blog__slide swiper-slide">
+								<div class="blog__image lazy_image">
+									<img data-src="img/blog/683.webp" alt="">
+								</div>
+								<div class="blog__content">
+									<div class="blog__main">
+										<div class="blog__date text-xs">29/11/2023</div>
+										<div class="blog__title">Приймальня громадян Пенсійного фонду України стала доступнішою</div>
+									</div>
+									<div class="blog__details details _icon-arrow-link">Детальніше</div>
+								</div>
+							</a>
+							<a href="" class="blog__slide swiper-slide">
+								<div class="blog__image lazy_image">
+									<img data-src="img/blog/684.webp" alt="">
+								</div>
+								<div class="blog__content">
+									<div class="blog__main">
+										<div class="blog__date text-xs">24/10/2024</div>
+										<div class="blog__title">Як допомогти людині з порушеннями зору на вулиці чи в укритті</div>
+									</div>
+									<div class="blog__details details _icon-arrow-link">Детальніше</div>
+								</div>
+							</a>
+							<a href="" class="blog__slide swiper-slide">
+								<div class="blog__image lazy_image">
+									<img data-src="img/blog/685.webp" alt="">
+								</div>
+								<div class="blog__content">
+									<div class="blog__main">
+										<div class="blog__date text-xs">29/11/2021</div>
+										<div class="blog__title">Поєднання теорії з виходом у поле</div>
+									</div>
+									<div class="blog__details details _icon-arrow-link">Детальніше</div>
+								</div>
+							</a>
+							<a href="" class="blog__slide swiper-slide">
+								<div class="blog__image lazy_image">
+									<img data-src="img/blog/683.webp" alt="">
+								</div>
+								<div class="blog__content">
+									<div class="blog__main">
+										<div class="blog__date text-xs">29/11/2023</div>
+										<div class="blog__title">Приймальня громадян Пенсійного фонду України стала доступнішою</div>
+									</div>
+									<div class="blog__details details _icon-arrow-link">Детальніше</div>
+								</div>
+							</a>
+							<a href="" class="blog__slide swiper-slide">
+								<div class="blog__image lazy_image">
+									<img data-src="img/blog/684.webp" alt="">
+								</div>
+								<div class="blog__content">
+									<div class="blog__main">
+										<div class="blog__date text-xs">24/10/2024</div>
+										<div class="blog__title">Як допомогти людині з порушеннями зору на вулиці чи в укритті</div>
+									</div>
+									<div class="blog__details details _icon-arrow-link">Детальніше</div>
+								</div>
+							</a>
+							<a href="" class="blog__slide swiper-slide">
+								<div class="blog__image lazy_image">
+									<img data-src="img/blog/685.webp" alt="">
+								</div>
+								<div class="blog__content">
+									<div class="blog__main">
+										<div class="blog__date text-xs">29/11/2021</div>
+										<div class="blog__title">Поєднання теорії з виходом у поле</div>
+									</div>
+									<div class="blog__details details _icon-arrow-link">Детальніше</div>
+								</div>
+							</a>
+						</div>
+						<div class="blog__nav-swiper nav-swiper nav-swiper-mod">
 							<button type="button" class="nav-swiper__button swiper-button-prev _icon-arrow-link"></button>
 							<button type="button" class="nav-swiper__button swiper-button-next _icon-arrow-link"></button>
 						</div>
@@ -459,7 +678,7 @@
 						</div>
 					</div>
 					<form class="footer__form form">
-						<h5 class="form__title">Зв’яжіться з нами</h5>
+						<div class="form__title h5">Зв’яжіться з нами</div>
 						<div class="form__main">
 							<div class="form__wrap">
 								<div class="form__item">
@@ -511,7 +730,7 @@
 			</div>
 		</div>
 	</div>
-	<script src="js/app.min.js?_v=20240724201722"></script>
+	<script src="js/app.min.js?_v=20240809181011"></script>
 </body>
 
 </html>
